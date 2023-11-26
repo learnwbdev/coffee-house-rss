@@ -130,3 +130,12 @@ a {
     line-height: 1.25em;
 }
 
+.link-style {
+    max-width: max-content;
+    border-bottom: 2px solid transparent;
+}
+
+.link-style:hover {
+    border-bottom: 2px solid rgb(var(--color-text-dark));
+}
+
