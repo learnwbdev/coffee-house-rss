@@ -243,7 +243,7 @@ a {
 }
 
 .footer-content {
-    background-color: rgba(var(--color-bg-backdrop-alpha));
+    background-color: rgba(var(--color-bg-container));
     border-radius: 2.5rem;
     padding: 6.25rem;
 }
