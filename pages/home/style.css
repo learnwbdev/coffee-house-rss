@@ -49,3 +49,50 @@
 .about-pictures__image {
     overflow: hidden;
 }
+
+.layout-2-column-grid {
+    display: grid;
+    gap: 6.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6.25rem;
+}
+
+.enjoy-content {
+    border-radius: 2.5rem;
+    background-image: url('../../assets/images/img-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 50%;
+}
+
+.enjoy-content__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.menu-button {
+    display: flex;
+    gap: 0.5rem;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    color: rgb(var(--color-text-dark));
+}
+
+.menu-button__icon {
+    display: none;
+}
+
+.menu-button__text, .menu-button__icon {
+    transition: all 0.3s ease-in;
+}
+
+.menu-button:hover .menu-button__text {
+    transform: translateX(-0.5rem);
+}
+
+.menu-button:hover .menu-button__icon{
+    display: flex;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}

@@ -47,6 +47,7 @@ html {
     font-size: 16px;
     width: 1440px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -158,10 +159,29 @@ a {
     border-bottom: 2px solid transparent;
 }
 
+.button {
+    width: 12.5rem;
+    height: 4rem;
+    padding: 1.25em 4.875em;
+    border-radius: 6.25rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+.button_filled {
+    background-color: rgb(var(--color-bg-body));
+}
+
+.button_outlined {
+    border-color: rgb(var(--color-border-dark));
+}
+
 .header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.25rem;
 }
 
 .header__navigation {
