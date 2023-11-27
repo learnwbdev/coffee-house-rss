@@ -73,14 +73,16 @@
 
 .menu-button {
     display: flex;
-    gap: 0.5rem;
     transition: all 0.5s ease-out;
     cursor: pointer;
     color: rgb(var(--color-text-dark));
 }
 
 .menu-button__icon {
-    display: none;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    opacity: 0;
+    vertical-align: baseline;
 }
 
 .menu-button__text, .menu-button__icon {
@@ -88,10 +90,7 @@
 }
 
 .menu-button:hover .menu-button__icon{
-    display: flex;
-    min-width: 1.25rem;
-    min-height: 1.25rem;
-    align-self: center;
+    opacity: 1;
 }
 
 .menu-button:hover .menu-button__text {
