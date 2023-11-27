@@ -43,11 +43,11 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__content">
         <h1 class="aria-label aria-label_hidden">Resource Coffee House Menu</h1>
         <nav class="header__navigation" aria-label="Main">
           <ul class="navigation">
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item_position_left">
               <a href="../home/">
                 <span class="aria-label aria-label_hidden"> Home </span>
                 <div class="logo">
@@ -61,21 +61,23 @@
               </a>
             </li>
             <li class="link-style navigation__item text-link">
-              <a href="../home#favourite-coffee">Favorite coffee</a>
+              <a href="../home#favourite-coffee" class="link-style"
+                >Favorite coffee
+              </a>
             </li>
-            <li class="link-style navigation__item text-link">
-              <a href="../home#about-resource">About</a>
+            <li class="navigation__item text-link">
+              <a href="../home#about-resource" class="link-style">About</a>
             </li>
-            <li class="link-style navigation__item text-link">
-              <a href="../home#mobile-app">Mobile app</a>
+            <li class="navigation__item text-link">
+              <a href="../home#mobile-app" class="link-style">Mobile app</a>
             </li>
-            <li class="link-style navigation__item text-link">
-              <a href="#footer-contacts">Contact us</a>
+            <li class="navigation__item text-link">
+              <a href="#footer-contacts" class="link-style">Contact us</a>
             </li>
             <li
-              class="link-style link_current navigation__item navigation__item_position_right text-link"
+              class="link-style link-style_current link-style_with-icon navigation__item navigation__item_position_right text-link"
             >
-              <span class="aria-label aria-label_hidden"> Current Page: </span>
+              <span class="aria-label aria-label_hidden">Current Page: </span>
               Menu
               <span class="icon-coffee-cup"></span>
             </li>
