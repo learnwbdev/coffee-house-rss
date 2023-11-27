@@ -139,16 +139,15 @@ a {
 .link-style {
     max-width: max-content;
     border-bottom: 2px solid transparent;
+    transition: all 0.5s ease-out;
 }
 
 .link-style:hover {
     border-bottom: 2px solid rgb(var(--color-text-dark));
-    transition: all 0.5s ease-out;
 }
 
 .link-style_on-dark:hover {
     border-bottom: 2px solid rgb(var(--color-text-light));
-    transition: all 0.5s ease-out;
 }
 
 .link-style_current {
@@ -234,12 +233,12 @@ a {
     border: 1px solid rgb(var(--color-border-light));
     stroke: rgb(var(--color-text-light));
     background-color: transparent;
+    transition: all 0.5s ease-out;
 }
 
 .icon-social-media:hover {
     stroke: rgb(var(--color-text-dark));
     background-color: rgb(var(--color-bg-body));
-    transition: all 0.5s ease-out;
 }
 
 .footer-column-contacts {
