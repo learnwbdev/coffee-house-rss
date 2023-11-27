@@ -87,14 +87,15 @@
     transition: all 0.3s ease-in;
 }
 
-.menu-button:hover .menu-button__text {
-    transform: translateX(-0.5rem);
-}
-
 .menu-button:hover .menu-button__icon{
     display: flex;
     min-width: 1.25rem;
     min-height: 1.25rem;
+    align-self: center;
+}
+
+.menu-button:hover .menu-button__text {
+    transform: translateX(-0.75rem);
 }
 
 .mobile-content {
@@ -112,7 +113,7 @@
 .image-mobile-screen {
     width: 100%;
     height: 100%;
-    margin-left: -2rem;
+    margin-left: -2.375rem;
 }
 
 .download-buttons {

@@ -141,6 +141,7 @@ a {
     max-width: max-content;
     border-bottom: 2px solid transparent;
     transition: all 0.5s ease-out;
+    padding-bottom: 2px;
 }
 
 .link-style:hover {
@@ -153,6 +154,7 @@ a {
 
 .link-style_current {
     border-bottom: 2px solid rgb(var(--color-text-dark));
+    user-select: none;
 }
 
 .link-style_no-link {
