@@ -51,7 +51,7 @@
 .menu-type-button:hover {
     color: rgb(var(--color-text-light));
     background-color: rgb(var(--color-bg-container));
-    border-color: rgb(var(--color-bg-container));
+    border-color: transparent;
 }
 
 .menu-type-button:hover .menu-type-button__icon {
