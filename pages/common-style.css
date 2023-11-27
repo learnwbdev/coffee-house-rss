@@ -176,10 +176,6 @@ a {
     transform: none;
 }
 
-.link-style_no-link {
-    border-bottom: 2px solid transparent;
-}
-
 .button {
     width: 12.5rem;
     height: 4rem;
