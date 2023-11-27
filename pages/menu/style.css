@@ -21,7 +21,7 @@
     padding: 0.5em;
     padding-right: 1em;
     max-width: max-content;
-    max-height: 3rem;
+    max-height: 2.875rem;
     cursor: pointer;
     border-color: rgb(var(--color-border-light));
     color: rgb(var(--color-text-dark));
@@ -40,7 +40,7 @@
 .menu-type-button_selected {
     color: rgb(var(--color-text-light));
     background-color: rgb(var(--color-bg-container));
-    border-color: rgb(var(--color-bg-container));
+    border-color: transparent;
     cursor: auto;
 }
 
