@@ -51,7 +51,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Verdana', sans-serif;
     background-color: rgb(var(--color-bg-body));
     color: rgb(var(--color-text-dark));
     margin: 1.25rem 0;
