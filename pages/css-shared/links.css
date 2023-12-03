@@ -1,6 +1,7 @@
 .link-style {
     position: relative;
     max-width: max-content;
+    margin-bottom: 0.25rem;
 }
 
 .link-style::after {
