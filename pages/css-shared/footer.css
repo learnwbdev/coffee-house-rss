@@ -33,11 +33,6 @@
     transition: all 0.5s ease-out;
 }
 
-.icon-social-media:hover {
-    stroke: rgb(var(--color-text-dark));
-    background-color: rgb(var(--color-bg-body));
-}
-
 .footer-column-contacts {
     display: flex;
     gap: 2.5rem;
@@ -78,4 +73,11 @@
 
 .icon-contact-us_open-hours {
     background-image: url('../../assets/icons/contact/contact-clock.svg');
+}
+
+@media (hover: hover) {
+    .icon-social-media:hover {
+        stroke: rgb(var(--color-text-dark));
+        background-color: rgb(var(--color-bg-body));
+    }
 }

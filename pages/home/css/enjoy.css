@@ -38,10 +38,12 @@
     transition: all 0.3s ease-in;
 }
 
-.menu-button:hover .menu-button__icon{
-    opacity: 1;
-}
+@media (hover: hover) {
+    .menu-button:hover .menu-button__icon{
+        opacity: 1;
+    }
 
-.menu-button:hover .menu-button__text {
-    transform: translateX(-0.75rem);
+    .menu-button:hover .menu-button__text {
+        transform: translateX(-0.75rem);
+    }
 }

@@ -32,15 +32,17 @@
     padding: 0.75em 1.25em;
 }
 
-.app-button:hover {
-    color: rgb(var(--color-text-light));
-    fill: rgb(var(--color-text-light));
-    background-color: rgb(var(--color-bg-container));
-}
-
 .app-button__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+@media (hover: hover) {
+    .app-button:hover {
+        color: rgb(var(--color-text-light));
+        fill: rgb(var(--color-text-light));
+        background-color: rgb(var(--color-bg-container));
+    }
 }

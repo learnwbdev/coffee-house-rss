@@ -32,14 +32,16 @@
     transition: transform 0.5s ease-out;
 }
 
-.image:hover {
-    transform: scale(100%);
-}
-
 .image_round-border {
     border-radius: 1.25rem;
 }
 
 .about-pictures__image {
     overflow: hidden;
+}
+
+@media (hover: hover) {
+    .image:hover {
+        transform: scale(100%);
+    }
 }

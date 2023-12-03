@@ -57,12 +57,6 @@
     margin: 0.25rem;
 }
 
-.icon_arrow:hover {
-    border-color: rgb(var(--color-bg-container));
-    background-color: rgb(var(--color-bg-container));
-    stroke: rgb(var(--color-text-light));
-}
-
 .slider-bars {
     display: flex;
     gap: 0.75rem;
@@ -79,4 +73,12 @@
 
 .select-bar_active {
     background-color: rgb(var(--color-border-dark));
+}
+
+@media (hover: hover) {
+    .icon_arrow:hover {
+        border-color: rgb(var(--color-bg-container));
+        background-color: rgb(var(--color-bg-container));
+        stroke: rgb(var(--color-text-light));
+    }
 }

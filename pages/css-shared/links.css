@@ -21,10 +21,6 @@
     background-color: rgb(var(--color-text-light));
 }
 
-.link-style:hover::after {
-    transform: scaleX(100%);
-}
-
 .link-style_current {
     user-select: none;
 }
@@ -33,6 +29,12 @@
     transform: scaleX(100%);
 }
 
-.link-style_current:hover::after {
-    transform: none;
+@media (hover: hover) {
+    .link-style:hover::after {
+        transform: scaleX(100%);
+    }
+
+    .link-style_current:hover::after {
+        transform: none;
+    }
 }

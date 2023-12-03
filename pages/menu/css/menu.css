@@ -48,16 +48,6 @@
     background-color: rgb(var(--color-bg-body));
 }
 
-.menu-type-button:hover {
-    color: rgb(var(--color-text-light));
-    background-color: rgb(var(--color-bg-container));
-    border-color: transparent;
-}
-
-.menu-type-button:hover .menu-type-button__icon {
-    background-color: rgb(var(--color-bg-body));
-}
-
 .icon-menu_coffee {
     background-image: url('../../../assets/icons/emoji/emoji-coffee.png');
     background-repeat: no-repeat;
@@ -107,14 +97,26 @@
     transition: all 0.5s ease-out;
 }
 
-.menu-item:hover .menu-item__image-file {
-    transform: scale(100%);
-}
-
 .menu-item__about {
     display: grid;
     gap: 0.75rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2.4fr 1fr;
     margin: 1.25rem;
+}
+
+@media (hover: hover) {
+    .menu-item:hover .menu-item__image-file {
+        transform: scale(100%);
+    }
+
+    .menu-type-button:hover {
+        color: rgb(var(--color-text-light));
+        background-color: rgb(var(--color-bg-container));
+        border-color: transparent;
+    }
+
+    .menu-type-button:hover .menu-type-button__icon {
+        background-color: rgb(var(--color-bg-body));
+    }
 }
