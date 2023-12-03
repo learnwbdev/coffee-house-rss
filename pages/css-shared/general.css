@@ -60,9 +60,17 @@ a {
     cursor: pointer;
 }
 
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 43rem;
+    }
+}
+
 /* Mobile */
 @media screen and (max-width: 380px) {
     .container {
+        max-width: 21.75rem;
         margin: 0 1rem;
     }
 }
