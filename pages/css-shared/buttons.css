@@ -1,0 +1,17 @@
+.button {
+    width: 12.5rem;
+    height: 4rem;
+    padding: 1.25em 4.875em;
+    border-radius: 6.25rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+.button_filled {
+    background-color: rgb(var(--color-bg-body));
+}
+
+.button_outlined {
+    border-color: rgb(var(--color-border-dark));
+}

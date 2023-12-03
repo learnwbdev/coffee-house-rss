@@ -1,0 +1,50 @@
+.heading-1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.05em;
+}
+
+.heading-2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+
+.heading-3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+
+.accent-text {
+    font-style: italic;
+    color: rgb(var(--color-text-accent));
+}
+
+.text-on-dark {
+    color: rgb(var(--color-text-light));
+}
+
+.text-medium {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.text-caption {
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.text-link {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.text-burger-link {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.25em;
+}

@@ -1,0 +1,81 @@
+.footer-content {
+    background-color: rgba(var(--color-bg-container));
+    border-radius: 2.5rem;
+    padding: 6.25rem;
+}
+
+.layout-2-column {
+    display: flex;
+    gap: 8.5rem;
+    align-items: flex-start;
+}
+
+.social-media-link-container {
+    margin-top: 2.5rem;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.icon-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 9999px;
+    border: 1px solid rgb(var(--color-border-light));
+    stroke: rgb(var(--color-text-light));
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+}
+
+.icon-social-media:hover {
+    stroke: rgb(var(--color-text-dark));
+    background-color: rgb(var(--color-bg-body));
+}
+
+.footer-column-contacts {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-text {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.icon-contact-us {
+    display: flex;
+    width: 1.25rem;
+    height: 1.25rem;
+    align-self: flex-start;
+}
+
+.icon-contact-us_address {
+    background-image: url('../../assets/icons/contact/contact-pin-alt.svg');
+}
+
+.icon-contact-us_phone {
+    background-image: url('../../assets/icons/contact/contact-phone.svg');
+}
+
+.icon-contact-us_open-hours {
+    background-image: url('../../assets/icons/contact/contact-clock.svg');
+}
