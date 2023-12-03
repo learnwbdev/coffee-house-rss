@@ -59,3 +59,10 @@ a {
     color: inherit;
     cursor: pointer;
 }
+
+/* Mobile */
+@media screen and (max-width: 380px) {
+    .container {
+        margin: 0 1rem;
+    }
+}
