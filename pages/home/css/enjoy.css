@@ -9,9 +9,9 @@
     border-radius: 2.5rem;
     background-image: url('../../../assets/images/img-hero.jpg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: 50% 50%;
-    min-height: 40.25rem;
+    background-size: cover;
+    background-position: 50%;
+    max-height: 40.25rem;
 }
 
 .enjoy-content__column {
@@ -45,5 +45,28 @@
 
     .menu-button:hover .menu-button__text {
         transform: translateX(-0.75rem);
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .layout-2-column-grid {
+        padding: 6.25rem 3.75rem;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-button .menu-button__icon{
+        opacity: 1;
+    }
+
+    .menu-button .menu-button__text {
+        transform: translateX(-0.75rem);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 380px) {
+    .layout-2-column-grid {
+        padding: 3.75rem 1rem;
     }
 }
