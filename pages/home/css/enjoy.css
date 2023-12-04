@@ -20,6 +20,10 @@
     gap: 2.5rem;
 }
 
+.heading-1 {
+    margin-bottom: 1px;
+}
+
 .menu-button {
     display: flex;
     transition: all 0.5s ease-out;
