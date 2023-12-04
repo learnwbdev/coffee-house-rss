@@ -147,7 +147,7 @@
 }
 
 /* Tablet */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .menu-item_hidden-mobile {
         display: none;
         transition: all 0.5s ease-out;
