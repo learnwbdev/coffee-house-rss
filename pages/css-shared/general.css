@@ -28,7 +28,7 @@ body {
     font-family: 'Inter', 'Verdana', sans-serif;
     background-color: rgb(var(--color-bg-body));
     color: rgb(var(--color-text-dark));
-    margin: 1.25rem 0;
+    margin: 1.25rem 0 2.5rem 0;
 }
 
 .aria-label_hidden {
