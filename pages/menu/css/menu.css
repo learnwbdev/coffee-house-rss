@@ -68,6 +68,7 @@
 
 .menu-list {
     display: flex;
+    justify-content: center;
     gap: 2.5rem;
     flex-wrap: wrap;
     margin-bottom: 6.25rem;
@@ -119,4 +120,16 @@
     .menu-type-button:hover .menu-type-button__icon {
         background-color: rgb(var(--color-bg-body));
     }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .menu-item_hidden-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 380px) {
+
 }
