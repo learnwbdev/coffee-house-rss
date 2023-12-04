@@ -100,6 +100,15 @@
 /* Mobile */
 @media screen and (max-width: 640px) {
     .footer-content {
+        gap: 4.5rem;
+        padding: 3.75rem 1rem;
+        min-height: 32.875rem;
+        transition: all 0.5s ease-out;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .footer-content {
         gap: 2.5rem;
         padding: 3.75rem 1rem;
         min-height: 32.875rem;
