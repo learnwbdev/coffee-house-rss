@@ -32,12 +32,17 @@
 .app-button {
     display: flex;
     gap: 0.5rem;
-    justify-content: flex-start;
+    align-items: center;
     color: rgb(var(--color-text-dark));
     fill: rgb(var(--color-text-dark));
     background-color: transparent;
     transition: all 0.5s ease-in;
-    padding: 0.75em 1.25em;
+    padding: calc(0.75em - 1px) calc(1.25em - 1px);
+}
+
+.app-button__icon {
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 .app-button__text {
