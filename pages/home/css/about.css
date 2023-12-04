@@ -7,6 +7,8 @@
 .about-pictures {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2.5rem;
     flex-wrap: wrap;
     width: 100%;
@@ -17,6 +19,7 @@
     border-radius: 1.25rem;
     overflow: hidden;
     width: min(41.25rem, 100%);
+    max-width: 41.25rem;
     height: 36.875rem;
 }
 
@@ -59,8 +62,8 @@
     }
 }
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
+/* Desktop */
+@media screen and (max-width: 1439.98px) {
     .about-pictures {
         max-height: none;
         transition: all 0.5s ease-out;
@@ -70,7 +73,10 @@
         width: 100%;
         transition: all 0.5s ease-out;
     }
+}
 
+/* Tablet */
+@media screen and (max-width: 768px) {
     .about-pictures__image_reduced-height {
         display: none;
         transition: all 0.5s ease-out;
