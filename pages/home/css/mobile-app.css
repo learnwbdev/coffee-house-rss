@@ -60,11 +60,16 @@
     }
 }
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
+/* Tablet, Desktop */
+@media screen and (max-width: 1240px) {
     .mobile-content {
         flex-direction: column;
         transition: all 0.5s ease-out;
+    }
+
+    .mobile-content__column {
+        max-width: 43rem;
+        justify-content: center;
     }
 }
 
@@ -73,6 +78,11 @@
     .mobile-content {
         gap: 2.5rem;
         transition: all 0.5s ease-out;
+    }
+
+    .mobile-content__column {
+        max-width: 30rem;
+        justify-content: center;
     }
 
     .image-mobile-screen {
