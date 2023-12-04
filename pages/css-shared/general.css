@@ -19,7 +19,7 @@
 
 html {
     font-size: 16px;
-    width: 1440px;
+    width: 100vw;
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -28,7 +28,7 @@ body {
     font-family: 'Inter', 'Verdana', sans-serif;
     background-color: rgb(var(--color-bg-body));
     color: rgb(var(--color-text-dark));
-    margin: 1.25rem 0 2.5rem 0;
+    padding: 1.25rem 0 2.5rem 0;
 }
 
 .aria-label_hidden {
