@@ -50,13 +50,15 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 642px) {
     .heading-1 {
         font-size: 2.625rem;
         line-height: 1.15em;
+        transition: all 0.5s ease-out;
     }
 
     .heading-2 {
         font-size: 2rem;
+        transition: all 0.5s ease-out;
     }
 }

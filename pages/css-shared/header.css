@@ -65,14 +65,23 @@
 }
 
 /* Tablet */
+@media screen and (max-width: 800px) {
+    .navigation {
+        gap: 2.2rem;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hamburger-menu {
         display: flex;
         opacity: 1;
+        transition: all 0.5s ease-out;
     }
 
     .mobile-menu-hidden {
         display: none;
         opacity: 0;
+        transition: all 0.5s ease-out;
     }
 }

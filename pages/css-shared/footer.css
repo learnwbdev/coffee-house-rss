@@ -77,20 +77,32 @@
     }
 }
 
+/* Desktop */
+@media screen and (max-width: 1180px) {
+    .footer-content {
+        gap: 3rem;
+        padding: 6.25rem 3.75rem;
+        transition: all 0.5s ease-out;
+    }
+}
+
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1045px) {
     .footer-content {
         flex-direction: column;
+        gap: 6.25rem;
         padding: 6.25rem 3.75rem;
         min-height: 46rem;
+        transition: all 0.5s ease-out;
     }
 }
 
 /* Mobile */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 640px) {
     .footer-content {
         gap: 2.5rem;
         padding: 3.75rem 1rem;
         min-height: 32.875rem;
+        transition: all 0.5s ease-out;
     }
 }

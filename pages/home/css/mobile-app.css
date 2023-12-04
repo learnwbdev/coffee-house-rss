@@ -61,24 +61,28 @@
 }
 
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .mobile-content {
         flex-direction: column;
+        transition: all 0.5s ease-out;
     }
 }
 
 /* Mobile */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 640px) {
     .mobile-content {
         gap: 2.5rem;
+        transition: all 0.5s ease-out;
     }
 
     .image-mobile-screen {
         width: 21.75rem;
         height: 21.75rem;
+        transition: all 0.5s ease-out;
     }
 
     .download-buttons {
         flex-direction: column;
+        transition: all 0.5s ease-out;
     }
 }

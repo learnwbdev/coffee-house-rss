@@ -84,20 +84,23 @@
 }
 
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .icon_arrow {
         margin: 0;
+        transition: all 0.5s ease-out;
     }
 }
 
 /* Mobile */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 640px) {
     .slider-item__image {
         width: 21.75rem;
         height: 21.75rem;
+        transition: all 0.5s ease-out;
     }
 
     .slider-favorite__control {
         display: none;
+        transition: all 0.5s ease-out;
     }
 }

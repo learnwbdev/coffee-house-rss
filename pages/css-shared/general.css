@@ -61,17 +61,10 @@ a {
     cursor: pointer;
 }
 
-/* Tablet */
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 43rem;
-    }
-}
-
 /* Mobile */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 642px) {
     .container {
-        max-width: 21.75rem;
         margin: 0 1rem;
+        transition: all 0.5s ease-out;
     }
 }

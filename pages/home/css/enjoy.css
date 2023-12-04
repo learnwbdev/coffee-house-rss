@@ -1,11 +1,5 @@
-.layout-2-column-grid {
-    display: grid;
-    gap: 6.25rem;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 6.25rem;
-}
-
 .enjoy-content {
+    padding: 6.25rem;
     border-radius: 2.5rem;
     background-image: url('../../../assets/images/img-hero.jpg');
     background-repeat: no-repeat;
@@ -17,15 +11,23 @@
 .enjoy-content__column {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2.5rem;
+    max-width: 33.125rem;
+    min-height: 27.75rem;
 }
 
 .heading-1 {
     margin-bottom: 1px;
 }
 
+.menu-button-flex {
+    margin-top: auto;
+}
+
 .menu-button {
     display: flex;
+    margin-top: auto;
     transition: all 0.5s ease-out;
     cursor: pointer;
     color: rgb(var(--color-text-dark));
@@ -53,30 +55,53 @@
 }
 
 /* Tablet */
-@media screen and (max-width: 768px) {
-    .layout-2-column-grid {
+@media screen and (max-width: 802px) {
+    .enjoy-content {
         padding: 6.25rem 3.75rem;
-        grid-template-columns: 1fr;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-button {
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-out;
     }
 
     .menu-button .menu-button__icon{
         opacity: 1;
-    }
-
-    .menu-button {
-        gap: 0.5rem;
-        justify-content: center;
-        align-items: center
+        transition: all 0.5s ease-out;
     }
 }
 
 /* Mobile */
-@media screen and (max-width: 380px) {
-    .layout-2-column-grid {
-        padding: 3.75rem 1rem;
+@media screen and (max-width: 720px) {
+    .enjoy-content {
+        padding: 3.75rem 2rem 4rem 2rem;
+        min-height: 40.25rem;
+        transition: all 0.5s ease-in;
     }
 
+    .enjoy-content__column {
+        max-width: 32.125rem;
+        transition: all 0.5s ease-in;
+    }
+}
+
+@media screen and (max-width: 642px) {
     .enjoy-content {
+        padding: 3.75rem 2rem;
+        min-height: 34.5rem;
+        transition: all 0.5s ease-out;
+    }
+}
+
+@media screen and (max-width: 397px) {
+    .enjoy-content {
+        padding: 3.75rem 1rem;
         max-height: 34.5rem;
+        transition: all 0.5s ease-out;
     }
 }
