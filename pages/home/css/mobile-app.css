@@ -60,7 +60,7 @@
     }
 }
 
-/* Tablet, Desktop */
+/* Desktop */
 @media screen and (max-width: 1240px) {
     .mobile-content {
         flex-direction: column;
@@ -68,20 +68,30 @@
     }
 
     .mobile-content__column {
-        max-width: 43rem;
+        justify-content: center;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 870px) {
+    .mobile-content {
+        flex-direction: column;
+        transition: all 0.5s ease-out;
+    }
+
+    .mobile-content__column {
         justify-content: center;
     }
 }
 
 /* Mobile */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 690px) {
     .mobile-content {
         gap: 2.5rem;
         transition: all 0.5s ease-out;
     }
 
     .mobile-content__column {
-        max-width: 30rem;
         justify-content: center;
     }
 
