@@ -82,6 +82,7 @@
     .footer-content {
         flex-direction: column;
         padding: 6.25rem 3.75rem;
+        min-height: 46rem;
     }
 }
 
@@ -90,5 +91,6 @@
     .footer-content {
         gap: 2.5rem;
         padding: 3.75rem 1rem;
+        min-height: 32.875rem;
     }
 }

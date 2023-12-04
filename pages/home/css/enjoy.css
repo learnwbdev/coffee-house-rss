@@ -63,8 +63,10 @@
         opacity: 1;
     }
 
-    .menu-button .menu-button__text {
-        transform: translateX(-0.75rem);
+    .menu-button {
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center
     }
 }
 
@@ -72,5 +74,9 @@
 @media screen and (max-width: 380px) {
     .layout-2-column-grid {
         padding: 3.75rem 1rem;
+    }
+
+    .enjoy-content {
+        max-height: 34.5rem;
     }
 }

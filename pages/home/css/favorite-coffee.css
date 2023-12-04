@@ -83,6 +83,13 @@
     }
 }
 
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .icon_arrow {
+        margin: 0;
+    }
+}
+
 /* Mobile */
 @media screen and (max-width: 380px) {
     .slider-item__image {

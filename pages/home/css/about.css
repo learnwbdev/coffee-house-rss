@@ -72,11 +72,16 @@
     .about-pictures__image_reduced-height {
         display: none;
     }
+
+    .image-about {
+        background-position: calc(50% + 1rem - 3px) 50%;
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 380px) {
     .image-about {
-        transform: scale(125%);
+        transform: scale(123%);
+        background-position: 50%;
     }
 }
