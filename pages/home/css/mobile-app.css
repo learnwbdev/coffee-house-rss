@@ -1,17 +1,25 @@
 .mobile-content {
+    display: flex;
+    gap: 6.25rem;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 6.25rem;
-    gap: 6.25rem;
 }
 
 .mobile-content__column {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    min-width: 39.375rem;
 }
 
 .image-mobile-screen {
+    display: flex;
+    width: 39.375rem;
+    height: 39.375rem;
+}
+
+.image-mobile-screen__img {
+    display: flex;
     width: 100%;
     height: 100%;
 }
@@ -44,5 +52,28 @@
         color: rgb(var(--color-text-light));
         fill: rgb(var(--color-text-light));
         background-color: rgb(var(--color-bg-container));
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .mobile-content {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 380px) {
+    .mobile-content {
+        gap: 2.5rem;
+    }
+
+    .image-mobile-screen {
+        width: 21.75rem;
+        height: 21.75rem;
+    }
+
+    .download-buttons {
+        flex-direction: column;
     }
 }
