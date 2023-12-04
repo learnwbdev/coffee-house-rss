@@ -82,3 +82,15 @@
         stroke: rgb(var(--color-text-light));
     }
 }
+
+/* Mobile */
+@media screen and (max-width: 380px) {
+    .slider-item__image {
+        width: 21.75rem;
+        height: 21.75rem;
+    }
+
+    .slider-favorite__control {
+        display: none;
+    }
+}
