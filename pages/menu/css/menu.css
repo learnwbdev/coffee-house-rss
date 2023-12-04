@@ -114,8 +114,12 @@
     margin: 1.25rem;
 }
 
-.icon-reload {
+.reload-button {
     display: none;
+}
+
+.icon-reload {
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 3.75rem;
@@ -148,8 +152,8 @@
         display: none;
     }
 
-    .icon-reload {
-        display: flex;
+    .reload-button {
+        display: block;
     }
 }
 
