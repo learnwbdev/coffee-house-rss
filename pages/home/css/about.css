@@ -76,5 +76,7 @@
 
 /* Mobile */
 @media screen and (max-width: 380px) {
-
+    .image-about {
+        transform: scale(125%);
+    }
 }
