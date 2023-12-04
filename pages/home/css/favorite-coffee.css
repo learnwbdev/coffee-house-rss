@@ -24,6 +24,8 @@
     display: flex;
     gap: 1.25rem;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider-item__description {
@@ -92,15 +94,21 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 764px) {
     .slider-item__image {
         width: 21.75rem;
         height: 21.75rem;
         transition: all 0.5s ease-out;
     }
-
+}
+@media screen and (max-width: 640px) {
     .slider-favorite__control {
         display: none;
+        transition: all 0.5s ease-out;
+    }
+
+    .slider-favorite__content {
+        min-width: 100%;
         transition: all 0.5s ease-out;
     }
 }
