@@ -74,7 +74,7 @@
 /* Mobile */
 @media screen and (max-width: 720px) {
     .enjoy-content {
-        padding: 3.75rem 2rem 4rem 2rem;
+        padding: 3.75rem 1rem;
         min-height: 40.25rem;
     }
 
