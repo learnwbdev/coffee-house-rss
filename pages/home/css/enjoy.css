@@ -55,7 +55,6 @@
 @media screen and (max-width: 802px) {
     .enjoy-content {
         padding: 6.25rem 3.75rem;
-        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -77,12 +76,10 @@
     .enjoy-content {
         padding: 3.75rem 2rem 4rem 2rem;
         min-height: 40.25rem;
-        transition: all 0.5s ease-in;
     }
 
     .enjoy-content__column {
         max-width: 32.125rem;
-        transition: all 0.5s ease-in;
     }
 }
 
@@ -90,7 +87,6 @@
     .enjoy-content {
         padding: 3.75rem 1rem;
         min-height: 34.5rem;
-        transition: all 0.5s ease-out;
     }
 }
 
@@ -98,6 +94,5 @@
     .enjoy-content {
         padding: 3.75rem 1rem;
         max-height: 34.5rem;
-        transition: all 0.5s ease-out;
     }
 }
