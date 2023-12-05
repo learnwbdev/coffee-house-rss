@@ -18,7 +18,7 @@
 .about-pictures__image {
     border-radius: 1.25rem;
     overflow: hidden;
-    width: min(41.25rem, 100%);
+    width: 41.25rem;
     max-width: 41.25rem;
     height: 36.875rem;
 }
@@ -70,7 +70,7 @@
     }
 
     .about-pictures__image {
-        width: 100%;
+        max-width: 43rem;
         transition: all 0.5s ease-out;
     }
 }
@@ -84,6 +84,18 @@
 
     .image-about {
         background-position: calc(50% + 1rem - 3px) 50%;
+        transition: all 0.5s ease-out;
+    }
+
+    .about-pictures__image {
+        width: 43rem;
+        transition: all 0.5s ease-out;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .about-pictures__image {
+        width: 100%;
         transition: all 0.5s ease-out;
     }
 }
