@@ -7,14 +7,14 @@
 
 .header__navigation {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .navigation {
     display: flex;
-    gap: 2.5rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -23,12 +23,12 @@
     display: flex;
 }
 
-.navigation__item_position_left {
-    margin-right: auto;
-}
-
-.navigation__item_position_right {
-    margin-left: auto;
+.navigation__center-links, .navigation__center-links-container {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .icon-coffee-cup {
@@ -47,14 +47,6 @@
 @media screen and (max-width: 800px) {
     .navigation {
         gap: 2.2rem;
-        transition: all 0.5s ease-in-out;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .mobile-menu-hidden {
-        display: none;
-        opacity: 0;
-        transition: all 0.5s ease-out;
+        transition: gap 0.5s ease-in-out;
     }
 }

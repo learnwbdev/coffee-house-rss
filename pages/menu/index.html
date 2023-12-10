@@ -45,44 +45,48 @@
       <div class="container header__content">
         <h1 class="aria-label aria-label_hidden">Resource Coffee House Menu</h1>
         <nav class="header__navigation" aria-label="Main">
+          <a data-link="../home/" class="link-another-page">
+            <span class="aria-label aria-label_hidden"> Home </span>
+            <div class="logo">
+              <img
+                src="../../assets/images/logo/logo.svg"
+                alt="Resource Coffee House Logo"
+                width="100"
+                height="60"
+              >
+            </div>
+          </a>
           <ul class="navigation">
-            <li class="navigation__item navigation__item_position_left">
-              <a href="../home/">
-                <span class="aria-label aria-label_hidden"> Home </span>
-                <div class="logo">
-                  <img
-                    src="../../assets/images/logo/logo.svg"
-                    alt="Resource Coffee House Logo"
-                    width="100"
-                    height="60"
-                  >
-                </div>
-              </a>
-            </li>
-            <li class="navigation__item text-link mobile-menu-hidden">
-              <a href="../home#favorite-coffee" class="link-style"
-                >Favorite coffee
-              </a>
-            </li>
-            <li class="navigation__item text-link mobile-menu-hidden">
-              <a href="../home#about-resource" class="link-style">About</a>
-            </li>
-            <li class="navigation__item text-link mobile-menu-hidden">
-              <a href="../home#mobile-app" class="link-style">Mobile app</a>
-            </li>
-            <li class="navigation__item text-link mobile-menu-hidden">
-              <a href="#footer-contacts" class="link-style">Contact us</a>
+            <li class="navigation__center-links-container">
+              <ul class="navigation__center-links">
+                <li class="navigation__item text-link">
+                  <a data-link="../home#favorite-coffee" class="link-style link-another-page"
+                    >Favorite coffee
+                  </a>
+                </li>
+                <li class="navigation__item text-link">
+                  <a data-link="../home#about-resource" class="link-style link-another-page">About</a>
+                </li>
+                <li class="navigation__item text-link">
+                  <a data-link="../home#mobile-app" class="link-style link-another-page">Mobile app</a>
+                </li>
+                <li class="navigation__item text-link">
+                  <a data-link="footer-contacts" class="link-style link-current-page">Contact us</a>
+                </li>
+              </ul>
             </li>
             <li
-              class="link-style link-style_current link-style_with-icon navigation__item navigation__item_position_right text-link mobile-menu-hidden"
+              class="navigation__menu-link link-style link-style_current link-style_with-icon navigation__item
+                     text-link link-coffee"
             >
               <span class="aria-label aria-label_hidden">Current Page: </span>
               Menu
-              <span class="icon-coffee-cup"></span>
+              <span class="icon-coffee-cup hamburger-coffee"></span>
             </li>
           </ul>
-          <label class="hamburger-menu">
-            <input class="hamburger-menu__checkbox" type="checkbox" name="hamburger-menu">
+          <label class="hamburger-menu navigation__item_position_right">
+            <input class="hamburger-menu__checkbox" type="checkbox"
+                   name="hamburger-menu"  id="hamburger-menu-id">
             <div class="hamburger-menu__container">
               <span class="hamburger-menu__line hamburger-menu__line_top"></span>
               <span class="hamburger-menu__line hamburger-menu__line_bottom"></span>
