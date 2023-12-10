@@ -81,10 +81,13 @@
               <span class="icon-coffee-cup"></span>
             </li>
           </ul>
-          <div class="hamburger-menu">
-            <span class="hamburger-menu__line hamburger-menu__line_top"></span>
-            <span class="hamburger-menu__line hamburger-menu__line_bottom"></span>
-          </div>
+          <label class="hamburger-menu">
+            <input class="hamburger-menu__checkbox" type="checkbox" name="hamburger-menu">
+            <div class="hamburger-menu__container">
+              <span class="hamburger-menu__line hamburger-menu__line_top"></span>
+              <span class="hamburger-menu__line hamburger-menu__line_bottom"></span>
+            </div>
+          </label>
         </nav>
       </div>
     </header>
@@ -422,5 +425,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../scripts-shared/hamburger-menu.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

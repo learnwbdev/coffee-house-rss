@@ -1,0 +1,67 @@
+.hamburger-menu {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid rgb(var(--color-border-dark));
+  transition: all 0.5s ease-out;
+}
+
+.hamburger-menu__checkbox {
+  pointer-events: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-menu__container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 0.4375rem;
+  justify-content: space-between;
+  align-items: center;
+  width: min-content;
+  height: min-content;
+}
+
+.hamburger-menu__line {
+  --translate-delta-y: 4px;
+  --rotate-degrees: 45deg;
+  position: absolute;
+  width: 16px;
+  height: 0px;
+  border: 1px solid rgb(var(--color-text-dark));
+  border-radius: 2.5rem;
+  background-color: rgb(var(--color-text-dark));
+  translate: 0 calc(-1 * var(--transform-direction) * var(--translate-delta-y));
+  transition: rotate 0.3s ease-out, translate 0.2s ease-out 0.2s;
+}
+
+.hamburger-menu__line_top {
+  --transform-direction: 1;
+}
+
+.hamburger-menu__line_bottom {
+  --transform-direction: -1;
+}
+
+.hamburger-menu:has(.hamburger-menu__checkbox:checked) .hamburger-menu__line {
+  translate: 0 0;
+  rotate: calc(var(--transform-direction) * var(--rotate-degrees));
+  transition: translate 0.2s ease-out, rotate 0.3s ease-out 0.15s;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+      display: flex;
+      opacity: 1;
+      transition: all 0.5s ease-out;
+  }
+}
