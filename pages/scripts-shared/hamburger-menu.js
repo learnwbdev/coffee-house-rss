@@ -3,6 +3,9 @@ const hamburgerButton = document.getElementById("hamburger-menu-id");
 const sideBarNavigation = document.querySelector(".navigation");
 const navLinksCurrentPage = document.querySelectorAll(".link-current-page");
 const navLinksAnotherPage = document.querySelectorAll(".link-another-page");
+const navLinksNonInteractive = document.querySelectorAll(
+  ".link-non-interactive",
+);
 
 function toggleSideBar() {
   if (hamburgerButton.checked) {
@@ -56,4 +59,8 @@ navLinksCurrentPage.forEach((navLink) => {
 navLinksAnotherPage.forEach((navLink) => {
   const targetLink = navLink.getAttribute("data-link");
   navLink.addEventListener("click", () => goToLinkAnotherPage(targetLink));
+});
+
+navLinksNonInteractive.forEach((navLink) => {
+  navLink.addEventListener("click", () => hamburgerButton.click());
 });
