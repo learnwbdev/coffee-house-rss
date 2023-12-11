@@ -72,3 +72,12 @@ navLinksAnotherPage.forEach((navLink) => {
 navLinksNonInteractive.forEach((navLink) => {
   navLink.addEventListener("click", () => hamburgerButton.click());
 });
+
+window.onresize = () => {
+  if (hamburgerButton.checked && window.innerWidth > 768) {
+    hamburgerButton.checked = false;
+    htmlBody.classList.remove("is-no-scroll");
+    sideBarNavigation.classList.remove("navigation__show");
+    sideBarNavigation.classList.remove("navigation__transition");
+  }
+};
