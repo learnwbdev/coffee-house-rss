@@ -99,6 +99,8 @@ function populateMenuItems(menuItemsToPopulate) {
   menuItemsArrayDivs.forEach((menuItemDiv) =>
     menuListContainer.appendChild(menuItemDiv),
   );
+
+  return menuItemsArrayDivs;
 }
 
 export default populateMenuItems;

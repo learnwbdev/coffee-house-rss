@@ -171,3 +171,8 @@
         transition: all 0.5s ease-out;
     }
 }
+
+.load-button-hidden {
+    display: none;
+    transition: all 0.5s ease-out;
+}
