@@ -55,38 +55,43 @@ buttonSliderNext.addEventListener("click", () => {
 let isSwiping = false;
 let swipePositionXStart;
 let swipePositionXEnd;
+let swipePositionYStart;
+let swipePositionYEnd;
 
 sliderImages.forEach((sliderImage) =>
   sliderImage.addEventListener("dragstart", (e) => e.preventDefault()),
 );
 
-function getSwipePositionX(event) {
-  const positionX = event.type.includes("touch")
-    ? event.touches[0].clientX
-    : event.clientX;
-  return positionX;
+function getSwipePosition(event) {
+  const position = event.type.includes("touch")
+    ? [event.touches[0].clientX, event.touches[0].clientY]
+    : [event.clientX, event.clientY];
+  return position;
 }
 
 function swipeStart(event) {
   isSwiping = true;
-  swipePositionXStart = getSwipePositionX(event);
+  [swipePositionXStart, swipePositionYStart] = getSwipePosition(event);
   sliderList.style.cursor = "grabbing";
 }
 
 function swipeMove(event) {
   if (isSwiping) {
-    swipePositionXEnd = getSwipePositionX(event);
+    [swipePositionXEnd, swipePositionYEnd] = getSwipePosition(event);
   }
 }
 
 function swipeEnd() {
   if (isSwiping) {
     sliderList.style.cursor = "grab";
-    const swipeDelta = swipePositionXEnd - swipePositionXStart;
-    const shortSwipeLength = 100;
-    const isShortSwipe = Math.abs(swipeDelta) > shortSwipeLength;
-    const isSwipeToNext = swipeDelta < 0;
-    if (isShortSwipe) {
+    const swipeDeltaX = swipePositionXEnd - swipePositionXStart;
+    const swipeDeltaY = swipePositionYEnd - swipePositionYStart;
+    const shortSwipeXLength = 100;
+    const longSwipeYLength = 200;
+    const isShortSwipeX = Math.abs(swipeDeltaX) > shortSwipeXLength;
+    const isLongSwipeY = Math.abs(swipeDeltaY) > longSwipeYLength;
+    const isSwipeToNext = swipeDeltaX < 0;
+    if (!isLongSwipeY && isShortSwipeX) {
       if (isSwipeToNext) {
         swipeSlider(deltaSliderToNext);
       } else {
