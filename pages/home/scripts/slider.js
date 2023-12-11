@@ -102,6 +102,17 @@ function swipeEnd() {
   isSwiping = false;
 }
 
+// auto slider
+const sliderSwitchTimeInMs = 6000;
+let currentTimeoutId;
+
+function autoSwipeSlider() {
+  swipeSlider(deltaSliderToNext);
+  currentTimeoutId = setTimeout(autoSwipeSlider, sliderSwitchTimeInMs);
+}
+
+autoSwipeSlider();
+
 // Mouse Events
 sliderList.addEventListener("mouseenter", () => {
   sliderList.style.cursor = "grab";
@@ -119,14 +130,3 @@ sliderList.addEventListener("touchcancel", swipeEnd);
 sliderList.addEventListener("touchmove", (e) => swipeMove(e), {
   passive: true,
 });
-
-// auto slider
-const sliderSwitchTimeInMs = 6000;
-let currentTimeoutId;
-
-function autoSwipeSlider() {
-  swipeSlider(deltaSliderToNext);
-  currentTimeoutId = setTimeout(autoSwipeSlider, sliderSwitchTimeInMs);
-}
-
-autoSwipeSlider();
