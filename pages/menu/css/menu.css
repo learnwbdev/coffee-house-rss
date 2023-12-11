@@ -50,6 +50,7 @@
     background-color: rgb(var(--color-bg-container));
     border-color: transparent;
     cursor: auto;
+    transition: all 0.5s ease-in;
 }
 
 .menu-type-button_selected .menu-type-button__icon {
@@ -72,6 +73,10 @@
     background-image: url('../../../assets/icons/emoji/emoji-dessert.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+.menu-list-container {
+    transition: all 0.5s ease-in;
 }
 
 .menu-list {
