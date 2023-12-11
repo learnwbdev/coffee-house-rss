@@ -1,6 +1,7 @@
 const sliderList = document.querySelector(".slider-list");
 const sliderItems = document.querySelectorAll(".slider-list__item");
 const selectBars = document.querySelectorAll(".select-bar");
+const sliderImages = document.querySelectorAll(".slider-item__image");
 
 const buttonSliderPrev = document.querySelector(
   ".slider-favorite__control_previous",
@@ -39,10 +40,75 @@ function swipeSlider(swipeDelta) {
   addActiveSelectBar();
 }
 
+// arrow buttons event listeners
 buttonSliderPrev.addEventListener("click", () => {
   swipeSlider(-1);
 });
 
 buttonSliderNext.addEventListener("click", () => {
   swipeSlider(1);
+});
+
+// swipe by touch / mouse
+let isSwiping = false;
+let swipePositionXStart;
+let swipePositionXEnd;
+
+sliderImages.forEach((sliderImage) =>
+  sliderImage.addEventListener("dragstart", (e) => e.preventDefault()),
+);
+
+function getSwipePositionX(event) {
+  const positionX = event.type.includes("touch")
+    ? event.touches[0].clientX
+    : event.clientX;
+  return positionX;
+}
+
+function swipeStart(event) {
+  isSwiping = true;
+  swipePositionXStart = getSwipePositionX(event);
+  sliderList.style.cursor = "grabbing";
+}
+
+function swipeMove(event) {
+  if (isSwiping) {
+    swipePositionXEnd = getSwipePositionX(event);
+  }
+}
+
+function swipeEnd() {
+  if (isSwiping) {
+    sliderList.style.cursor = "grab";
+    const swipeDelta = swipePositionXEnd - swipePositionXStart;
+    const shortSwipeLength = 100;
+    const isShortSwipe = Math.abs(swipeDelta) > shortSwipeLength;
+    const isSwipeToNext = swipeDelta < 0;
+    if (isShortSwipe) {
+      if (isSwipeToNext) {
+        swipeSlider(1);
+      } else {
+        swipeSlider(-1);
+      }
+    }
+  }
+  isSwiping = false;
+}
+
+// Mouse Events
+sliderList.addEventListener("mouseenter", () => {
+  sliderList.style.cursor = "grab";
+});
+sliderList.addEventListener("mousedown", (e) => swipeStart(e));
+sliderList.addEventListener("mouseup", swipeEnd);
+sliderList.addEventListener("mouseleave", swipeEnd);
+sliderList.addEventListener("mousemove", (e) => swipeMove(e));
+// Touch Events
+sliderList.addEventListener("touchstart", (e) => swipeStart(e), {
+  passive: true,
+});
+sliderList.addEventListener("touchend", swipeEnd);
+sliderList.addEventListener("touchcancel", swipeEnd);
+sliderList.addEventListener("touchmove", (e) => swipeMove(e), {
+  passive: true,
 });
