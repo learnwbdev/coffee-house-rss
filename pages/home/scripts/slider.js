@@ -2,6 +2,8 @@ const sliderList = document.querySelector(".slider-list");
 const sliderItems = document.querySelectorAll(".slider-list__item");
 const selectBars = document.querySelectorAll(".select-bar");
 const sliderImages = document.querySelectorAll(".slider-item__image");
+const deltaSliderToNext = 1;
+const deltaSliderToPrev = -1;
 
 const buttonSliderPrev = document.querySelector(
   ".slider-favorite__control_previous",
@@ -42,11 +44,11 @@ function swipeSlider(swipeDelta) {
 
 // arrow buttons event listeners
 buttonSliderPrev.addEventListener("click", () => {
-  swipeSlider(-1);
+  swipeSlider(deltaSliderToPrev);
 });
 
 buttonSliderNext.addEventListener("click", () => {
-  swipeSlider(1);
+  swipeSlider(deltaSliderToNext);
 });
 
 // swipe by touch / mouse
@@ -86,9 +88,9 @@ function swipeEnd() {
     const isSwipeToNext = swipeDelta < 0;
     if (isShortSwipe) {
       if (isSwipeToNext) {
-        swipeSlider(1);
+        swipeSlider(deltaSliderToNext);
       } else {
-        swipeSlider(-1);
+        swipeSlider(deltaSliderToPrev);
       }
     }
   }
@@ -112,3 +114,14 @@ sliderList.addEventListener("touchcancel", swipeEnd);
 sliderList.addEventListener("touchmove", (e) => swipeMove(e), {
   passive: true,
 });
+
+// auto slider
+const sliderSwitchTimeInMs = 6000;
+let currentTimeoutId;
+
+function autoSwipeSlider() {
+  swipeSlider(deltaSliderToNext);
+  currentTimeoutId = setTimeout(autoSwipeSlider, sliderSwitchTimeInMs);
+}
+
+autoSwipeSlider();
