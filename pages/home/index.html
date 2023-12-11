@@ -135,8 +135,7 @@
             Choose your <em class="accent-text">favorite</em> coffee
           </h2>
           <div class="slider-favorite">
-            <div class="slider-favorite__control slider-favorite__control_previous">
-              <a href="#" role="button" aria-label="Previous favorite coffee">
+            <div class="slider-favorite__control slider-favorite__control_previous" role="button" aria-label="Previous favorite coffee">
                 <span
                   class="icon icon_arrow icon_arrow-left icon_on-light"
                 >
@@ -153,33 +152,77 @@
                     />
                   </svg>
                 </span>
-              </a>
             </div>
 
-            <div class="slider-favorite__content">
-              <div class="slider-item">
-                <div class="slider-item__image">
-                  <img
-                    class="slider-item__image"
-                    src="../../assets/images/favorite-coffee/favorite-coffee-01.png"
-                    alt="A glass of iced coffee"
-                    width="530"
-                    height="530"
-                  >
-                </div>
-                <div class="slider-item__about">
-                  <h3 class="heading-3">S’mores Frappuccino</h3>
-                  <p class="text-medium slider-item__description">
-                    This new drink takes an espresso and mixes it with brown
-                    sugar and cinnamon before being topped with oat milk.
-                  </p>
-                  <p class="heading-3">&#36;5.50</p>
-                </div>
+            <div class="slider-wrapper">
+              <div class="slider-favorite__content">
+                <ul class="slider-list">
+                  <li class="slider-list__item">
+                    <div class="slider-item">
+                      <div class="slider-item__image">
+                        <img
+                          class="slider-item__image"
+                          src="../../assets/images/favorite-coffee/favorite-coffee-01.png"
+                          alt="A glass of iced coffee"
+                          width="530"
+                          height="530"
+                        >
+                      </div>
+                      <div class="slider-item__about">
+                        <h3 class="heading-3">S’mores Frappuccino</h3>
+                        <p class="text-medium slider-item__description">
+                          This new drink takes an espresso and mixes it with brown
+                          sugar and cinnamon before being topped with oat milk.
+                        </p>
+                        <p class="heading-3">&#36;5.50</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider-list__item">
+                    <div class="slider-item">
+                      <div class="slider-item__image">
+                        <img
+                          class="slider-item__image"
+                          src="../../assets/images/favorite-coffee/favorite-coffee-02.png"
+                          alt="A glass of iced coffee"
+                          width="530"
+                          height="530"
+                        >
+                      </div>
+                      <div class="slider-item__about">
+                        <h3 class="heading-3">Caramel Macchiato</h3>
+                        <p class="text-medium slider-item__description">
+                          Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.
+                        </p>
+                        <p class="heading-3">&#36;5.00</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider-list__item">
+                    <div class="slider-item">
+                      <div class="slider-item__image">
+                        <img
+                          class="slider-item__image"
+                          src="../../assets/images/favorite-coffee/favorite-coffee-03.png"
+                          alt="A glass of iced coffee"
+                          width="530"
+                          height="530"
+                        >
+                      </div>
+                      <div class="slider-item__about">
+                        <h3 class="heading-3">Ice coffee</h3>
+                        <p class="text-medium slider-item__description">
+                          A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
+                        </p>
+                        <p class="heading-3">&#36;4.50</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div class="slider-favorite__control slider-favorite__control_next">
-              <a href="#" role="button" aria-label="Next favorite coffee">
+            <div class="slider-favorite__control slider-favorite__control_next" role="button" aria-label="Next favorite coffee">
                 <span
                   class="icon icon_arrow icon_arrow-right icon_on-light"
                 >
@@ -196,7 +239,6 @@
                     />
                   </svg>
                 </span>
-              </a>
             </div>
           </div>
           <div class="slider-favorite-select">
@@ -442,6 +484,7 @@
     </footer>
 
     <script src="../scripts-shared/hamburger-menu.js"></script>
+    <script src="./scripts/slider.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
