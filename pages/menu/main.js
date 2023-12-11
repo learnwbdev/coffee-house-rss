@@ -1,7 +1,10 @@
 import { menuListContainer } from "./scripts/constants.js";
 import populateMenuItems from "./scripts/populate-menu-items.js";
 import getProductItems from "./scripts/fetch-products.js";
-import { hideModalMenuItem } from "./scripts/menu-modal.js";
+import {
+  hideModalMenuItem,
+  addEventListenersToModalButtons,
+} from "./scripts/menu-modal.js";
 
 let menuItems;
 let menuItemsDiv;
@@ -43,7 +46,6 @@ function removeMenuItems() {
 }
 
 function changeMenuCategory(newCategoryId) {
-  console.log("click", newCategoryId);
   if (newCategoryId !== currentProductCategoryId) {
     menuTypeButtons[currentProductCategoryId].classList.remove(
       "menu-type-button_selected",
@@ -100,3 +102,5 @@ modalBackdrop.addEventListener("click", (e) => {
   e.preventDefault();
   hideModalMenuItem();
 });
+
+addEventListenersToModalButtons();
