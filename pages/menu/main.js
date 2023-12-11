@@ -1,11 +1,14 @@
-import { productId, menuListContainer } from "./scripts/constants.js";
+import { menuListContainer } from "./scripts/constants.js";
 import populateMenuItems from "./scripts/populate-menu-items.js";
 import getProductItems from "./scripts/fetch-products.js";
+import { hideModalMenuItem } from "./scripts/menu-modal.js";
 
 let menuItems;
 let menuItemsDiv;
 const menuTypeButtons = document.querySelectorAll(".menu-type-button");
 const loadButton = document.querySelector(".reload-button");
+const modalButtonClose = document.querySelector(".modal-button-close");
+const modalBackdrop = document.querySelector(".modal-backdrop");
 let currentProductCategoryId = 0;
 let isShownAllMenuItems = false;
 
@@ -87,3 +90,13 @@ window.onresize = () => {
     hideAdditionalItems();
   }
 };
+
+modalButtonClose.addEventListener("click", (e) => {
+  e.preventDefault();
+  hideModalMenuItem();
+});
+
+modalBackdrop.addEventListener("click", (e) => {
+  e.preventDefault();
+  hideModalMenuItem();
+});

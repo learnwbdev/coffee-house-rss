@@ -4,6 +4,7 @@ import {
   imageSize,
   menuListContainer,
 } from "./constants.js";
+import { showModalMenuItem } from "./menu-modal.js";
 
 function createMenuItemDiv(itemProductId) {
   const divMenuItem = document.createElement("div");
@@ -84,6 +85,11 @@ function createSingleMenuItem(menuItem) {
     menuItem.description,
     menuItem.price,
   );
+
+  divMenuItem.addEventListener("click", (e) => {
+    e.preventDefault();
+    showModalMenuItem(menuItem);
+  });
 
   divMenuItem.appendChild(divMenuItemImage);
   divMenuItem.appendChild(divMenuItemAbout);
