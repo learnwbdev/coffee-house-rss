@@ -28,27 +28,35 @@ function toggleSideBar() {
 hamburgerButton.addEventListener("click", toggleSideBar);
 
 function goToLinkCurrentPage(targetLink) {
-  hamburgerButton.click();
-  sideBarNavigation.addEventListener(
-    "transitionend",
-    () => {
-      document
-        .getElementById(targetLink)
-        .scrollIntoView({ behavior: "smooth" });
-    },
-    { once: true },
-  );
+  if (hamburgerButton.checked) {
+    hamburgerButton.click();
+    sideBarNavigation.addEventListener(
+      "transitionend",
+      () => {
+        document
+          .getElementById(targetLink)
+          .scrollIntoView({ behavior: "smooth" });
+      },
+      { once: true },
+    );
+  } else {
+    document.getElementById(targetLink).scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 function goToLinkAnotherPage(targetLink) {
-  hamburgerButton.click();
-  sideBarNavigation.addEventListener(
-    "transitionend",
-    () => {
-      window.location.href = targetLink;
-    },
-    { once: true },
-  );
+  if (hamburgerButton.checked) {
+    hamburgerButton.click();
+    sideBarNavigation.addEventListener(
+      "transitionend",
+      () => {
+        window.location.href = targetLink;
+      },
+      { once: true },
+    );
+  } else {
+    window.location.href = targetLink;
+  }
 }
 
 navLinksCurrentPage.forEach((navLink) => {
